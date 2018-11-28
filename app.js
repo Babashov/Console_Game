@@ -3,6 +3,7 @@ var goodGuy = 'Good Man',
     goodGuyHealth = 100,
     badGuyHeadlth = 100,
     randomNumber,
+    defaultIntervalTime = 1000,
     simpleGame = {};
 
 
@@ -55,4 +56,4 @@ simpleGame.init = ()=>{
 // Game Interval
 var gameInterval = setInterval(()=>{
   simpleGame.init();
-},1000);
+},defaultIntervalTime);
