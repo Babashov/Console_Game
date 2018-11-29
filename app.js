@@ -4,6 +4,7 @@ var goodGuy = 'Good Man',
     badGuyHeadlth = 100,
     randomNumber,
     defaultIntervalTime = 1000,
+    defaultClearIntervalTime = 1000,
     simpleGame = {};
 
 
@@ -30,7 +31,7 @@ simpleGame.getWinner = ()=>{
   {
     console.log('Bad Guy is Winner and health is ' + badGuyHeadlth);
     
-    clearInterval(gameInterval,1000);
+    clearInterval(gameInterval,defaultClearIntervalTime);
 
   }
   if(badGuyHeadlth == 0)
@@ -38,7 +39,7 @@ simpleGame.getWinner = ()=>{
     
     console.log('Good Guy is Winner and health is ' + goodGuyHealth);
     
-    clearInterval(gameInterval,1000);
+    clearInterval(gameInterval,defaultClearIntervalTime);
   }
 
 }
